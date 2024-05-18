@@ -1,0 +1,53 @@
+/* admin.css */
+
+/* Style for navigation links */
+.nav__container {
+    display: flex;
+    flex-direction: row; /* Display items horizontally */
+    justify-content: space-between; /* Add space between items */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.nav__item-wrapper {
+    width: calc(25% - 20px); /* Set appropriate width */
+    margin: 10px; /* Add margin between each div */
+    height: 100px;
+    background-color: #ff781f; /* Orange color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__link {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.nav__link:hover {
+    background-color: #ff9d5c;
+}
+
+.nav__link.active {
+    background-color: #0056b3;
+}
+
+/* Additional Designs */
+.nav__link:nth-child(odd) {
+    background-color: #ff781f;
+}
+
+.nav__link:nth-child(odd):hover {
+    background-color: #ff9d5c;
+}
+
+.nav__link:nth-child(even) {
+    background-color: #ff781f;
+}
+
+.nav__link:nth-child(even):hover {
+    background-color: #ff9d5c;
+}
